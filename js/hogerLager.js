@@ -14,7 +14,10 @@ function checkNumber(guess){
     }
 }
 
+function guess(){
+    var msg = checkNumber(document.getElementById("input").value)
+    document.getElementById("gameMessagebox").childNodes[1].innerHTML = msg
+}
+
 var random = randomNumber()
-console.log(random)
-var guess = checkNumber(5)
-console.log(guess)
+document.getElementById("btn").onclick = guess; 
