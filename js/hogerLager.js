@@ -11,7 +11,8 @@ function checkNumber(guess){
         case(guess == ""): return "Voer een getal in!"
         case (guess > random) : return "Lager!"
         case (guess < random) : return "Hoger!"
-        default : return "Juist!"
+        case (guess == random) : return "Juist!"
+        default: return "Dit is geen getal!"
     }
 }
 
