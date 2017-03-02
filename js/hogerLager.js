@@ -22,9 +22,9 @@ function guess(){
 
 function generateRandom(){
     switch(document.getElementById("difficulty").value){
-        case ("easy"):random = randomNumber(easy); break;
-        case ("medium"):random = randomNumber(medium); break;
-        case ("hard"): random = randomNumber(hard); break;
+        case ("easy"):random = randomNumber(easy);document.getElementById("gameTitle").childNodes[3].innerHTML = "kies een getal tussen 1 en 100"; break;
+        case ("medium"):random = randomNumber(medium);document.getElementById("gameTitle").childNodes[3].innerHTML = "kies een getal tussen 1 en 200"; break;
+        case ("hard"): random = randomNumber(hard);document.getElementById("gameTitle").childNodes[3].innerHTML = "kies een getal tussen 1 en 400"; break;
     }
 }
 
