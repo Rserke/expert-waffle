@@ -2,3 +2,44 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh; }
+
+#game {
+  margin: auto;
+  border: solid 1px #000;
+  width: 500px;
+  height: 500px; }
+
+#gameTitle {
+  height: 30%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ff0000; }
+
+#gameBoard {
+  height: 65%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5%;
+  background: green; }
+
+#gameMessagebox {
+  height: 5%;
+  background: yellow; }
