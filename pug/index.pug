@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        title
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='css/style.css', rel='stylesheet')
+        include var.pug
+    body
+        main
+            #game
+                #gameTitle
+                    h1 #{title}
+                    h2 #{subText}
+                #gameBoard
+                    input(type="text" id="input" placeholder="hoger / lager")
+                    input(type="button" id="btn" value="submit")
+                #gameMessagebox
+                    p #{log}
+            
+        script(src="hogerLager.js")
